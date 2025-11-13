@@ -53,7 +53,11 @@ Create a self contained build for production at the remote server / traditionel 
 
 dotnet publish webappauth.csproj --configuration Release --runtime win-x86 --self-contained
 
-Upload the build to remote server
+- Upload the build to remote server
+
+- Upload the SQLite to remote server
+
+- Change the smtp server to Production
 
 At my remote servers the web.config needs to be without the folowing:
 
@@ -73,9 +77,9 @@ dotnet ef database update
 
 At my Webhotel they are using two different SMTP Servers:
 
-- Using one SMTP Server at the Webhotel for production ( local )
+- Using one SMTP Server at the Webhotel for production
 
-- Using another SMTP Server when the Web App is running remote like Azure or my local PC Developing
+- Using another SMTP Server when the Web App is running on my local PC Developing
 
 # Tip and Tricks
 
